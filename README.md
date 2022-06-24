@@ -39,3 +39,14 @@ function noReapetedValueOfAnArray(input){
   return newArray;
 }
 noReapetedValueOfAnArray( [7, 9, "hi", 12, "hi", 7, 53]);
+
+prompt #3
+clarify the question
+exception handling
+language preference
+inputs
+expected out put
+
+
+
+
