@@ -59,17 +59,16 @@ inputs
 expected out put
 
 function booleanCheck(input){
-  let bool =true;
-  let num=0
   for(i=0;i < input.length;i++){
-    for(j=1;j < input.length;j++)
-    if( input.charAt(i)==input.charAt(j)){
-      return bool
+    for(j=i+1;j < input.length;j++)
+    if( input[i]==input[j]){
+      return true;
     }else{
       return false;
     }
-  
+  }
 }
+  booleanCheck();
 
 
 // Prompt 5

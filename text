@@ -1,0 +1,32 @@
+not use array methods
+do not convert string to an array
+retun boolean : true or false 
+true if the work a does not have a repeating character
+Input -1:”hello”
+Output-1:”false”
+
+Input-2:”copyright”
+Output: “true”
+
+Psuedo
+string.length
+for loop 
+for loop 
+compar 
+loop1 ==loop1
+return =false;
+return =true;
+
+function charRepitionCheck(string){
+  let bool =true;
+for(let i=o ;i< string.length;i++){
+  for( let let j=i+1;j<string.length;j++){
+   if( string[i] === string[j]){
+     bool =false;
+    return  false;
+  }
+ }
+ return bool;
+}
+
+charRepitionCheck();
