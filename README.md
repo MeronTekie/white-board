@@ -38,7 +38,7 @@ function noReapetedValueOfAnArray(input){
   
   return newArray;
 }
-noReapetedValueOfAnArray( [7, 9, "hi", 12, "hi", 7, 53]);
+noReapetedValueOfAnArray([7, 9, "hi", 12, "hi", 7, 53]);
 
 prompt #3
 clarify the question
@@ -47,22 +47,43 @@ language preference
 inputs
 expected out put
 
-function numberOfRepeatedWords(input){
-  let array= input.split("");
-   let newWord ="";
-    for(i=0; i < array.length;i++){
-    let num=1;
-    if(array[i]!=null){
-    for(j=1; j < array.length; j++){
-      if(array[i] == array[j]){
-        num++;
-        array[j] = null;
-        }
-      }
-      newWord += num + array[i];
+
+
+
+prompt #4 
+
+clarify the question
+exception handling
+language preference
+inputs
+expected out put
+
+function booleanCheck(input){
+  let bool =true;
+  let num=0
+  for(i=0;i < input.length;i++){
+    for(j=1;j < input.length;j++)
+    if( input.charAt(i)==input.charAt(j)){
+      return bool
+    }else{
+      return false;
+    }
+  
+}
+
+
+// Prompt 5
+
+sort an array 
+function sortArray(array){
+  for (let i = 0; i < array. length; i++) {
+   for (let j = i + 1; j < array. length; j++) {
+     if(array[i]>array[j]){
+       temporary = array[i];
+       array[i] =array[j];
+       array[j]= temporary;
+     }
     }
   }
-  return newWord;
+  return array;
 }
-numberOfRepeatedWords();
-
