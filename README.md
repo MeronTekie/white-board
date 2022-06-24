@@ -47,6 +47,22 @@ language preference
 inputs
 expected out put
 
-
-
+function numberOfRepeatedWords(input){
+  let array= input.split("");
+   let newWord ="";
+    for(i=0; i < array.length;i++){
+    let num=1;
+    if(array[i]!=null){
+    for(j=1; j < array.length; j++){
+      if(array[i] == array[j]){
+        num++;
+        array[j] = null;
+        }
+      }
+      newWord += num + array[i];
+    }
+  }
+  return newWord;
+}
+numberOfRepeatedWords();
 
