@@ -20,13 +20,13 @@ return =true;
 function charRepitionCheck(string){
   let bool =true;
 for(let i=o ;i< string.length;i++){
-  for( let let j=i+1;j<string.length;j++){
-   if( string[i] === string[j]){
-     bool =false;
+  for(let j=i+1;j<string.length;j++){
+    if( string[i] === string[j]){
+    bool =false;
     return  false;
+    }
   }
- }
- return bool;
+  return bool;
 }
 
 charRepitionCheck();
