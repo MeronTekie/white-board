@@ -26,3 +26,16 @@ exception handling
 language preference
 inputs
 expected out put
+
+
+function noReapetedValueOfAnArray(input){
+  let newArray =[];
+  for(i=0; i < input.length ;i++){
+      if(!newArray.includes(input[i])){
+        newArray.push(input[i]);
+      }
+    }
+  
+  return newArray;
+}
+noReapetedValueOfAnArray( [7, 9, "hi", 12, "hi", 7, 53]);
