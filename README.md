@@ -17,3 +17,12 @@ function noSpace(sentence){
   return newSentence;
 }
 noSpace("Jasmine Ann Jones");
+
+
+// prompt number two without recursion
+
+clarify the question
+exception handling
+language preference
+inputs
+expected out put
