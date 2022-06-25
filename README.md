@@ -12,12 +12,15 @@ function noSpace(sentence){
   let newSentence ="";
   let  array = sentence.split(" ");
   for(i=0;i < array.length ; i++){
-    newSentence +=array[i].concat("%20") 
+     if(i==array.length-1){
+       newSentence +=array[i];
+     }else{
+      newSentence +=array[i].concat("%20"); 
+     }
   }
   return newSentence;
 }
 noSpace("Jasmine Ann Jones");
-
 
 // prompt number two without recursion
 
