@@ -46,7 +46,26 @@ exception handling
 language preference
 inputs
 expected out put
-
+function compressiingStrings(string){
+  let input= string.split("");
+  
+  let arrayNew=[];
+  
+  for( let i=0;i< input.length ;i++){
+    let num=1;
+    for(let j=i+1 ; j< input.length ;j++){
+      if(input[i]==input[j]){
+        num++;
+        }
+      } 
+     if(!arrayNew.includes(input[i])){
+     arrayNew.push(num);
+     arrayNew.push(input[i]); 
+     }
+   }
+  return arrayNew.join("");
+}
+compressiingStrings("aaaaddddbbbs");
 
 
 
